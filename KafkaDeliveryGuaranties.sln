@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KafkaDeliveryGuaranteesProducers", "KafkaDeliveryGuaranteesProducers\KafkaDeliveryGuaranteesProducers.csproj", "{CCE18717-F6EB-47D2-A86F-A33401516229}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KafkaDeliveryGuaranteesConsumers", "KafkaDeliveryGuaranteesConsumers\KafkaDeliveryGuaranteesConsumers.csproj", "{1447AF99-6474-45D4-B4A3-D28895D2D0CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KafkaDeadLetterQueueTutorials", "KafkaDeadLetterQueueTutorials\KafkaDeadLetterQueueTutorials.csproj", "{B1A5A34A-9CC8-4F03-9AA2-3517A198028E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCE18717-F6EB-47D2-A86F-A33401516229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCE18717-F6EB-47D2-A86F-A33401516229}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCE18717-F6EB-47D2-A86F-A33401516229}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCE18717-F6EB-47D2-A86F-A33401516229}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1447AF99-6474-45D4-B4A3-D28895D2D0CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1447AF99-6474-45D4-B4A3-D28895D2D0CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1447AF99-6474-45D4-B4A3-D28895D2D0CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1447AF99-6474-45D4-B4A3-D28895D2D0CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1A5A34A-9CC8-4F03-9AA2-3517A198028E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1A5A34A-9CC8-4F03-9AA2-3517A198028E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1A5A34A-9CC8-4F03-9AA2-3517A198028E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1A5A34A-9CC8-4F03-9AA2-3517A198028E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

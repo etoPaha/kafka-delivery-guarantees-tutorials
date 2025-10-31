@@ -1,0 +1,52 @@
+# Версия синтаксиса docker-compose
+version: '3.8'
+
+# Описание всех наших сервисов (контейнеров)
+services:
+
+  # 1. Сервис Zookeeper
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.3.0
+    container_name: zookeeper
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    ports:
+      - "2181:2181"
+
+  # 2. Сервис Kafka Broker
+  kafka:
+    image: confluentinc/cp-kafka:7.3.0
+    container_name: kafka
+    depends_on:
+      - zookeeper
+    ports:
+      # Порт 29092 будет доступен снаружи (из вашего C# кода на localhost)
+      # Порт 9092 будет использоваться для внутренней коммуникации между контейнерами
+      - "29092:29092"
+    environment:
+      # Как Kafka-брокеру найти Zookeeper. 'zookeeper:2181' - это имя сервиса и порт из секции выше.
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      # Это САМАЯ ВАЖНАЯ НАСТРОЙКА для подключения с вашего компьютера!
+      # Она говорит внешнему миру (вашему C# коду), по какому адресу обращаться к Kafka.
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,PLAINTEXT_HOST://localhost:29092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      # Фактор репликации для служебных топиков. Так как у нас всего один брокер, ставим 1.
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      # Разрешаем автоматическое создание топиков
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+
+  # 3. Сервис Веб-интерфейса
+  kafka-ui:
+    image: provectuslabs/kafka-ui:latest
+    container_name: kafka-ui
+    depends_on:
+      - kafka
+    ports:
+      # Веб-интерфейс будет доступен в браузере по адресу http://localhost:8080
+      - "8080:8080"
+    environment:
+      # Как веб-интерфейсу найти Kafka. 'kafka:9092' - это внутренний адрес брокера в сети Docker.
+      KAFKA_CLUSTERS_0_NAME: local-kafka-cluster
+      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:9092
