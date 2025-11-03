@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KafkaDeliveryGuaranteesCons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KafkaDeadLetterQueueTutorials", "KafkaDeadLetterQueueTutorials\KafkaDeadLetterQueueTutorials.csproj", "{B1A5A34A-9CC8-4F03-9AA2-3517A198028E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KafkaAtLeastOnceConsumerTutorial", "KafkaAtLeastOnceConsumerTutorial\KafkaAtLeastOnceConsumerTutorial.csproj", "{FF4D0F57-12FF-45FD-AA39-1F96225F39A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{B1A5A34A-9CC8-4F03-9AA2-3517A198028E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1A5A34A-9CC8-4F03-9AA2-3517A198028E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1A5A34A-9CC8-4F03-9AA2-3517A198028E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF4D0F57-12FF-45FD-AA39-1F96225F39A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF4D0F57-12FF-45FD-AA39-1F96225F39A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF4D0F57-12FF-45FD-AA39-1F96225F39A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF4D0F57-12FF-45FD-AA39-1F96225F39A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
