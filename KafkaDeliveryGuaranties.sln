@@ -8,6 +8,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KafkaDeadLetterQueueTutoria
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KafkaAtLeastOnceConsumerTutorial", "KafkaAtLeastOnceConsumerTutorial\KafkaAtLeastOnceConsumerTutorial.csproj", "{FF4D0F57-12FF-45FD-AA39-1F96225F39A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtMostOnceProducer", "AtMostOnceProducer\AtMostOnceProducer.csproj", "{83468B94-E252-459F-BE89-3E4F3D2A4924}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtLeastOnceProducerAndConsumer", "AtLeastOnceProducerAndConsumer\AtLeastOnceProducerAndConsumer.csproj", "{0F6CBA35-F4E1-42F6-9C1B-348CFD2F74EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,13 @@ Global
 		{FF4D0F57-12FF-45FD-AA39-1F96225F39A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF4D0F57-12FF-45FD-AA39-1F96225F39A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF4D0F57-12FF-45FD-AA39-1F96225F39A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83468B94-E252-459F-BE89-3E4F3D2A4924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83468B94-E252-459F-BE89-3E4F3D2A4924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83468B94-E252-459F-BE89-3E4F3D2A4924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83468B94-E252-459F-BE89-3E4F3D2A4924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F6CBA35-F4E1-42F6-9C1B-348CFD2F74EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F6CBA35-F4E1-42F6-9C1B-348CFD2F74EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F6CBA35-F4E1-42F6-9C1B-348CFD2F74EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F6CBA35-F4E1-42F6-9C1B-348CFD2F74EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
