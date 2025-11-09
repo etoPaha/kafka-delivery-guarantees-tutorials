@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtMostOnceProducer", "AtMos
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtLeastOnceProducerAndConsumer", "AtLeastOnceProducerAndConsumer\AtLeastOnceProducerAndConsumer.csproj", "{0F6CBA35-F4E1-42F6-9C1B-348CFD2F74EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExactlyOnceProducerAndConsumer", "ExactlyOnceProducerAndConsumer\ExactlyOnceProducerAndConsumer.csproj", "{3AEDC03F-A40F-4EA5-9884-D3724A94923B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{0F6CBA35-F4E1-42F6-9C1B-348CFD2F74EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F6CBA35-F4E1-42F6-9C1B-348CFD2F74EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F6CBA35-F4E1-42F6-9C1B-348CFD2F74EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AEDC03F-A40F-4EA5-9884-D3724A94923B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AEDC03F-A40F-4EA5-9884-D3724A94923B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AEDC03F-A40F-4EA5-9884-D3724A94923B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AEDC03F-A40F-4EA5-9884-D3724A94923B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
